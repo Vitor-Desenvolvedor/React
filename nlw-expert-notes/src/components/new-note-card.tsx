@@ -3,6 +3,10 @@ import {X} from 'lucide-react'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { toast } from 'sonner'
 
+interface NewNoteCardProps {
+    onNoteCreated: (content: string) => void
+  }
+
 export function NewNoteCard() {
 
     const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true)
